@@ -72,19 +72,19 @@ def Em(em):
     em = Decimal(em)
     i = (em**2)/((2 * 𝜇0) * c)
     bm = em/c
-    print(f'Bm (Campo Magnético) = {bm:.4e} | I (Intensidade) = {i:.4e}')
+    print(f'Bm (Campo Magnético) = {bm:.4e} T | I (Intensidade) = {i:.4e} W/m²')
 
 def Bm(bm):
     bm = Decimal(bm)
     em = bm * c
     i = ((c / (2 * 𝜇0)) * (bm**2))
-    print(f'Em (Campo Elétrico) = {em:.4e} | I (Intensidade) = {i:.4e}')
+    print(f'Em (Campo Elétrico) = {em:.4e} V/m | I (Intensidade) = {i:.4e} W/m²')
 
 def I(i):
     i = Decimal(i)
     em = sqrt(i * (2 * 𝜇0) * c)
     bm = sqrt((i * (2 * 𝜇0)) / c)
-    print(f'Em (Campo Elétrico) = {em:.4e} | Bm (Campo Magnético) = {bm:.4e}')
+    print(f'Em (Campo Elétrico) = {em:.4e} V/m | Bm (Campo Magnético) = {bm:.4e} T')
 
 def F(f):
     f = Decimal(f)
@@ -94,7 +94,7 @@ def F(f):
 
     k = w/(l*f) # K (Frequencia angular) -> w dividido por (lambda vezes a frequencia)
 
-    print(f"λ = {l:.4e} | k (Número da onda) = {k:.4e} | w (Frequência angular) = {w:.4e}")
+    print(f"λ = {l:.4e} m | k (Número de onda) = {k:.4e} rad/m | w (Frequência angular) = {w:.4e} rad/s")
 
 def W(w):
     w = Decimal(w)
@@ -105,7 +105,7 @@ def W(w):
 
     k = w/(l*f) # K -> w dividido por (lambda vezes a frequencia)
 
-    print(f"f = {f:.4e} | λ = {l:.4e} | k (Número da onda) = {k:.4e}")
+    print(f"f = {f:.4e} Hz | λ = {l:.4e} m | k (Número de onda) = {k:.4e} rad/m")
 
 def K(k):
     k = Decimal(k)
@@ -116,7 +116,7 @@ def K(k):
 
     w = l*f*k
 
-    print(f"f = {f:.4e} | λ = {l:.4e} | w (Frequência angular) = {w:.4e}")
+    print(f"f = {f:.4e} Hz | λ = {l:.4e} m | w (Frequência angular) = {w:.4e} rad/s")
 
 def L(l):
     l = Decimal(l)
@@ -127,7 +127,7 @@ def L(l):
 
     w = l*f*k
 
-    print(f"f = {f:.4e} | k (Número da onda) = {k:.4e} | w (Frequência angular) = {w:.4e}")
+    print(f"f = {f:.4e} Hz | k (Número de onda) = {k:.4e} rad/m | w (Frequência angular) = {w:.4e} rad/s")
 
 #----------------------------------
 
