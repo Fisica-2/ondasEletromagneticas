@@ -24,11 +24,14 @@ Pi = Decimal(str(2*pi))
 
 def main():
     print("""
- ______________________________________________
-| Artur Chaves Paiva       - RA: 22.223.023-7  |
-| Giovanni Antonio Moreira - RA: 22.223.010-4  |
-| Leonardo Souza de Castro - RA: 22.123.114-5  |
-|______________________________________________|                                       
+     ______________________________________________
+    | Artur Chaves Paiva       - RA: 22.223.023-7  |
+    | Giovanni Antonio Moreira - RA: 22.223.010-4  |
+    | Leonardo Souza de Castro - RA: 22.123.114-5  |
+    |______________________________________________|                                       
+
+Esse programa tem o intuito de calcular algumas propriedades de ondas e campos eletromagnéticos, e usa de diversas fórmulas para um cálculo preciso e eficiente. O programa aceita
+como entrada números em notação cíentifica, usando a notação 1.23E2 (1.23²). Além disso, estamos utilizando a biblioteca decimal para maior precisão nas respostas e operações. 
 """)
     while True:
         entrada = int(input("""
