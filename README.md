@@ -21,6 +21,6 @@ Esse programa tem o intuito de calcular algumas propriedades de ondas e campos e
 - Leonardo Souza de Castro - 22.123.114-5
 
 
-Obrigado pela atenção!
+Obrigado pela atenção! <br>
 Link direto para o repositório no GitHub: https://github.com/Fisica-2/ondasEletromagneticas
 
